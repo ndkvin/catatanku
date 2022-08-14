@@ -1,0 +1,20 @@
+.subnavbar {
+  padding: 10px 0;
+  .category-list {
+    .category {
+      font-size: 14px;
+      margin-top: 8px;
+      text-align: center;
+    }
+  }
+
+  form {
+    span {
+      border: none;
+    }
+
+    input {
+      border: none;
+    }
+  }
+}

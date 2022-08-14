@@ -1,0 +1,67 @@
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+  font-family: "Poppins", sans-serif;
+  background-color: #FAFAFA;
+}
+
+.navbar .navbar-brand {
+  font-weight: 800;
+  font-size: 28px;
+}
+.navbar .navbar-brand .logo {
+  max-width: 48px;
+}
+.navbar .navbar-collapse .navbar-nav .nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  color: #232631;
+}
+.navbar .navbar-collapse .authentications .btn {
+  border-radius: 20px;
+}
+
+.subnavbar {
+  padding: 10px 0;
+}
+.subnavbar .category-list .category {
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+}
+.subnavbar form span {
+  border: none;
+}
+.subnavbar form input {
+  border: none;
+}
+
+footer {
+  margin-top: 100px;
+}
+footer .left .title {
+  font-weight: 800;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+footer .left .medsos .list-medsos {
+  margin-left: -24px;
+}
+footer .left .medsos .list-medsos i {
+  font-size: 25px;
+}
+footer .left .copyright {
+  font-weight: 300;
+  font-size: 18px;
+}
+footer .right a {
+  text-decoration: none;
+  color: black;
+}
+footer .right .title {
+  font-weight: 600;
+  font-size: 20px;
+}
+footer .right .item {
+  font-size: 18px;
+  font-weight: 400;
+}/*# sourceMappingURL=main.css.map */

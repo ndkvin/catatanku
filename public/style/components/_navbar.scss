@@ -1,0 +1,26 @@
+.navbar {
+	.navbar-brand {
+		.logo {
+			max-width: 48px;
+		}
+
+		font-weight: 800;
+		font-size: 28px;
+	}
+
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-link {
+        font-weight: 400;
+        font-size: 16px;
+        color: #232631;
+      }
+    }
+
+    .authentications {
+      .btn {
+        border-radius: 20px;
+      }
+    }
+  }
+}
