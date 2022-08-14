@@ -34,14 +34,35 @@
                     <a class="nav-link" href="#">About Me</a>
                 </li>
             </ul>
-            <ul class="authentications navbar-nav">
-                <li class="nav-item">
-                    <a href="" class="btn btn-light me-md-2"> Register </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="btn btn-dark"> Login </a>
-                </li>
-            </ul>
+            @guest
+                <ul class="authentications navbar-nav">
+                    <li class="nav-item">
+                        <a href="{{ route('register') }}" class="btn btn-light me-md-2"> Register </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('login') }}" class="btn btn-dark"> Login </a>
+                    </li>
+                </ul>
+            @endguest
+
+            @auth
+                <ul class="authentications navbar-nav">
+                    <li class="mt-2 nav-item">
+                        Hi, {{ Auth::user()->name }}
+                    </li>
+                    <li class="nav-item">
+                        <a class="ms-2 btn btn-dark" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </li>
+                </ul>
+            @endauth
         </div>
     </div>
 </nav>
