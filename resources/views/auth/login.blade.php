@@ -43,7 +43,7 @@
                                     Log In
                                 </button>
                             </div>
-                            <div class="text-center mt-4 register">Don't have an account?<a class="text-dark fst-italic" href="{{ route('register') }}">register now</a>
+                            <div class="text-center mt-4 register">Don't have an account? <a class="text-dark fst-italic" href="{{ route('register') }}">register now</a>
                             </div>
                         </form>
                     </div>

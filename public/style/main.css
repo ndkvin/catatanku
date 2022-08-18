@@ -1,7 +1,7 @@
 body {
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
   font-family: "Poppins", sans-serif;
-  background-color: #FAFAFA;
+  background-color: white;
 }
 
 .navbar .navbar-brand {
@@ -88,4 +88,52 @@ footer .right .item {
 }
 .auth-page .card .card-body .register a {
   font-weight: 100;
+}
+
+.home-page .headline .title {
+  font-weight: 700;
+  font-size: 32px;
+}
+.home-page .headline .side {
+  margin-top: 45px;
+}
+.home-page .headline .side .info {
+  color: #999999;
+  font-size: 14px;
+}
+.home-page .headline .side .title {
+  font-weight: 700;
+  font-size: 32px;
+}
+.home-page .headline .side .summary {
+  font-weight: 300;
+  font-size: 16px;
+  color: #797777;
+}
+.home-page .headline .side a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.home-page .group .title {
+  font-weight: 700;
+  font-size: 32px;
+}
+.home-page .group .card {
+  border: none;
+  border-radius: 30px;
+}
+.home-page .group .card img {
+  border-radius: 20px 20px 0 0;
+}
+.home-page .group .card .card-body .date {
+  color: #999999;
+  font-size: 14px;
+}
+.home-page .group .card .card-body .title {
+  font-weight: 600;
+  font-size: 18px;
+}
+.home-page .group .card .card-body a {
+  text-decoration: none;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

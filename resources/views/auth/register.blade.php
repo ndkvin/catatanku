@@ -65,8 +65,8 @@
                                     Sign Up
                                 </button>
                             </div>
-                            <div class="text-center mt-4 register">Already have an account?<a class="text-dark fst-italic"
-                                    href="{{ route('register') }}">register now</a>
+                            <div class="text-center mt-4 register">Already have an account? <a class="text-dark fst-italic"
+                                    href="{{ route('login') }}">login now</a>
                             </div>
                         </form>
                     </div>
