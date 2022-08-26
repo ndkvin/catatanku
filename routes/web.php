@@ -18,3 +18,6 @@ Auth::routes();
 
 Route::get('/', [Controllers\HomeController::class, 'index'])
   ->name('home');
+Route::get('/detail/{id?}', function() {
+  return view('pages.detail');
+})->name('detail');

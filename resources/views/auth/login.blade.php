@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+@extends('layouts.detail')
 
 @push('title')
     Login Catatanku

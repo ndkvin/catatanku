@@ -38,86 +38,73 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card">
                             <img src="/images/home.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="date">Technology - August 15, 2022</div>
-                                <h5 class="title card-title mt-1 mb-3 w-75">Perkembangan teknologi di Indonesia pada satu
-                                    dekade
-                                    terakhir</h5>
-                                <a href="#" class="">Read Article</a>
-                            </div>
+                            <div class="date">Technology - August 15, 2022</div>
+                            <h5 class="title card-title mt-1 mb-3 w-75">Perkembangan teknologi di Indonesia pada satu
+                                dekade
+                                terakhir</h5>
+                            <a href="#" class="">Read Article</a>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card">
                             <img src="/images/home.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="date">Technology - August 15, 2022</div>
-                                <h5 class="title card-title mt-1 mb-3 w-75">Perkembangan teknologi di Indonesia pada satu
-                                    dekade
-                                    terakhir</h5>
-                                <a href="#" class="">Read Article</a>
-                            </div>
+                            <div class="date">Technology - August 15, 2022</div>
+                            <h5 class="title card-title mt-1 mb-3 w-75">Perkembangan teknologi di Indonesia pada satu
+                                dekade
+                                terakhir</h5>
+                            <a href="#" class="">Read Article</a>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card">
                             <img src="/images/home.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="date">Technology - August 15, 2022</div>
-                                <h5 class="title card-title mt-1 mb-3 w-75">Perkembangan teknologi di Indonesia pada satu
-                                    dekade
-                                    terakhir</h5>
-                                <a href="#" class="">Read Article</a>
-                            </div>
+                            <div class="date">Technology - August 15, 2022</div>
+                            <h5 class="title card-title mt-1 mb-3 w-75">Perkembangan teknologi di Indonesia pada satu
+                                dekade
+                                terakhir</h5>
+                            <a href="#" class="">Read Article</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="group mt-5">
-          <div class="container">
-              <h2 class="title mb-4">
-                  Technology
-              </h2>
-              <div class="row">
-                  <div class="col-12 col-md-6 col-lg-4">
-                      <div class="card">
-                          <img src="/images/home.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                              <div class="date">Technology - August 15, 2022</div>
-                              <h5 class="title card-title mt-1 mb-3 w-75">Perkembangan teknologi di Indonesia pada satu
-                                  dekade
-                                  terakhir</h5>
-                              <a href="#" class="">Read Article</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-12 col-md-6 col-lg-4">
-                      <div class="card">
-                          <img src="/images/home.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                              <div class="date">Technology - August 15, 2022</div>
-                              <h5 class="title card-title mt-1 mb-3 w-75">Perkembangan teknologi di Indonesia pada satu
-                                  dekade
-                                  terakhir</h5>
-                              <a href="#" class="">Read Article</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-12 col-md-6 col-lg-4">
-                      <div class="card">
-                          <img src="/images/home.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                              <div class="date">Technology - August 15, 2022</div>
-                              <h5 class="title card-title mt-1 mb-3 w-75">Perkembangan teknologi di Indonesia pada satu
-                                  dekade
-                                  terakhir</h5>
-                              <a href="#" class="">Read Article</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-@endsection
+            <div class="container">
+                <h2 class="title mb-4">
+                    Technology
+                </h2>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="/images/home.png" class="card-img-top" alt="...">
+                            <div class="date">Technology - August 15, 2022</div>
+                            <h5 class="title card-title mt-1 mb-3 w-75">Perkembangan teknologi di Indonesia pada satu
+                                dekade
+                                terakhir</h5>
+                            <a href="#" class="">Read Article</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="/images/home.png" class="card-img-top" alt="...">
+                            <div class="date">Technology - August 15, 2022</div>
+                            <h5 class="title card-title mt-1 mb-3 w-75">Perkembangan teknologi di Indonesia pada satu
+                                dekade
+                                terakhir</h5>
+                            <a href="#" class="">Read Article</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="/images/home.png" class="card-img-top" alt="...">
+                            <div class="date">Technology - August 15, 2022</div>
+                            <h5 class="title card-title mt-1 mb-3 w-75">Perkembangan teknologi di Indonesia pada satu
+                                dekade
+                                terakhir</h5>
+                            <a href="#" class="">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endsection
