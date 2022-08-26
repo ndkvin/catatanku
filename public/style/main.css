@@ -125,15 +125,21 @@ footer .right .item {
 .home-page .group .card img {
   border-radius: 20px 20px 0 0;
 }
-.home-page .group .card .card-body .date {
+.home-page .group .card .date {
+  margin-top: 20px;
   color: #999999;
   font-size: 14px;
 }
-.home-page .group .card .card-body .title {
+.home-page .group .card .title {
   font-weight: 600;
   font-size: 18px;
 }
-.home-page .group .card .card-body a {
+.home-page .group .card a {
   text-decoration: none;
   font-weight: 600;
+}
+
+.page-detail .breadcrumb-container {
+  margin: 0 auto !important;
+  text-align: center !important;
 }/*# sourceMappingURL=main.css.map */
