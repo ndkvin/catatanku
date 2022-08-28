@@ -1,6 +1,45 @@
 .page-detail {
-    .breadcrumb-container {
-      margin: 0 auto !important;
-      text-align: center !important;
+    .breadcrumb-nav {
+        margin-top: 50px;
+        ol {
+            li {
+                font-weight: 500;
+                font-size: 18px;
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .title {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .info {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .writer {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .description {
+        font-size: 18px;
+        h3 {
+            color: black;
+            font-size: 32px;
+        }
+    }
+
+    .tags {
+        h4 {
+            margin-bottom: 20px;
+        }
+
+        margin-bottom: 40px;
     }
 }

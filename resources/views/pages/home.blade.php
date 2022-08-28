@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="home-page mt-4">
-        <div class="headline">
+        <div class="headline" data-aos="fade-down">
             <div class="container">
                 <h2 class="title mb-4">Headline</h2>
                 <div class="row">
@@ -31,11 +31,11 @@
         </div>
         <div class="group mt-5">
             <div class="container">
-                <h2 class="title mb-4">
+                <h2 class="title mb-4" data-aos="fade-up">
                     Trending
                 </h2>
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="card">
                             <img src="/images/home.png" class="card-img-top" alt="...">
                             <div class="date">Technology - August 15, 2022</div>
@@ -45,7 +45,7 @@
                             <a href="#" class="">Read Article</a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="card">
                             <img src="/images/home.png" class="card-img-top" alt="...">
                             <div class="date">Technology - August 15, 2022</div>
@@ -55,7 +55,7 @@
                             <a href="#" class="">Read Article</a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="card">
                             <img src="/images/home.png" class="card-img-top" alt="...">
                             <div class="date">Technology - August 15, 2022</div>
@@ -70,11 +70,11 @@
         </div>
         <div class="group mt-5">
             <div class="container">
-                <h2 class="title mb-4">
+                <h2 class="title mb-4" data-aos="fade-up">
                     Technology
                 </h2>
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="card">
                             <img src="/images/home.png" class="card-img-top" alt="...">
                             <div class="date">Technology - August 15, 2022</div>
@@ -84,7 +84,7 @@
                             <a href="#" class="">Read Article</a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="card">
                             <img src="/images/home.png" class="card-img-top" alt="...">
                             <div class="date">Technology - August 15, 2022</div>
@@ -94,7 +94,7 @@
                             <a href="#" class="">Read Article</a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="card">
                             <img src="/images/home.png" class="card-img-top" alt="...">
                             <div class="date">Technology - August 15, 2022</div>
@@ -107,4 +107,5 @@
                 </div>
             </div>
         </div>
-    @endsection
+    </div>
+@endsection

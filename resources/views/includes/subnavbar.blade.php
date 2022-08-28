@@ -1,4 +1,4 @@
-<div class="container-fluid bg-dark subnavbar">
+<div class="container-fluid bg-dark subnavbar" data-aos="fade-up">
     <div class="container bg-dark">
         <div class="row justify-content-between">
             <div class="col-12 col-md-6">

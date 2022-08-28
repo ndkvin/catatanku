@@ -14,6 +14,7 @@
 			src="https://kit.fontawesome.com/65e0748f1c.js"
 			crossorigin="anonymous"
 		></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="/style/main.css" />
 		<link rel="icon" type="image/x-icon" href="/images/logo.png" />
 		<title>@stack('title')</title>
@@ -32,5 +33,9 @@
 			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
 			crossorigin="anonymous"
 		></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 	</body>
 </html>

@@ -1,9 +1,11 @@
 body {
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-  font-family: "Poppins", sans-serif;
   background-color: white;
 }
 
+.navbar {
+  background-color: white;
+}
 .navbar .navbar-brand {
   font-weight: 800;
   font-size: 28px;
@@ -21,6 +23,7 @@ body {
 }
 
 .subnavbar {
+  margin-top: 80px;
   padding: 10px 0;
 }
 .subnavbar .category-list .category {
@@ -36,7 +39,7 @@ body {
 }
 
 footer {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 footer .left .title {
   font-weight: 800;
@@ -139,7 +142,39 @@ footer .right .item {
   font-weight: 600;
 }
 
-.page-detail .breadcrumb-container {
-  margin: 0 auto !important;
-  text-align: center !important;
+.page-detail .breadcrumb-nav {
+  margin-top: 50px;
+}
+.page-detail .breadcrumb-nav ol li {
+  font-weight: 500;
+  font-size: 18px;
+}
+.page-detail .breadcrumb-nav ol li a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.page-detail .title {
+  font-size: 32px;
+  font-weight: bold;
+}
+.page-detail .info {
+  font-size: 18px;
+  font-weight: 500;
+}
+.page-detail .writer {
+  font-size: 18px;
+  font-weight: 500;
+}
+.page-detail .description {
+  font-size: 18px;
+}
+.page-detail .description h3 {
+  color: black;
+  font-size: 32px;
+}
+.page-detail .tags {
+  margin-bottom: 40px;
+}
+.page-detail .tags h4 {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

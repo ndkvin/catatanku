@@ -1,4 +1,4 @@
-<footer>
+<footer data-aos="fade-up-right" data-aos-delay="300">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 left">

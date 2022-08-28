@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg nav-unlogin">
+<nav class="navbar navbar-expand-lg fixed-top" data-aos="fade-down">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
             <div class="row">
