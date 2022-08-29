@@ -1,0 +1,47 @@
+.navbar-dashboard {
+    .navbar-brand {
+        .icon {
+            .title {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: -1px;
+            }
+        }
+    }
+
+    .dropdown {
+      .dropdown-toggle {
+        img {
+          width: 28px;
+        }
+
+        &::after  {
+          color: black;
+        }
+      }
+    }
+
+    .navbar-collapse {
+        .navbar-nav {
+            .nav-item {
+                a {
+                    font-weight: normal;
+                }
+            }
+        }
+
+        .right {
+            .nav-item {
+                a {
+                    i {
+                        font-size: 18px;
+                    }
+
+                    img {
+                      width: 28px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -21,3 +21,6 @@ Route::get('/', [Controllers\HomeController::class, 'index'])
 Route::get('/detail/{id?}', function() {
   return view('pages.detail');
 })->name('detail');
+Route::get('/dashboard', function() {
+  return view('pages.dashbaord');
+})->name('dashboard');

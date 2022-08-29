@@ -1,18 +1,18 @@
 <nav class="navbar navbar-expand-lg fixed-top" data-aos="fade-down">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
-            <div class="row">
+            <div class="row icon">
                 <div class="col">
                     <img src="/images/logo.png" class="logo me-2" alt="logo" />
                 </div>
                 <div class="col d-none d-md-block">
-                    <div class="">Catatanku</div>
+                    <div class="title">Catatanku</div>
                 </div>
             </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid hamburger-menu fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
