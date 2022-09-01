@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dashboard navbar-expand-lg">
+<nav class="navbar navbar-dashboard navbar-expand-lg border-bottom">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
             <div class="row icon">

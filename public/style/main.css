@@ -99,12 +99,6 @@ footer .right .item {
   font-weight: 400;
 }
 
-.dashboard .content .left {
-  max-width: 50px;
-  min-width: 50px;
-  background-color: red;
-}
-
 .auth-page {
   margin-top: 50px;
 }
@@ -213,4 +207,44 @@ footer .right .item {
 }
 .page-detail .tags h4 {
   margin-bottom: 20px;
+}
+
+.dashboard {
+  background-color: rgba(233, 236, 239, 0.2470588235);
+}
+.dashboard .content .left {
+  margin-left: -90px;
+  max-width: 75px;
+  min-width: 75px;
+  height: 70vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+}
+.dashboard .content .left.active {
+  margin-left: 0;
+}
+.dashboard .content .left a {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+.dashboard .content .left a i {
+  color: black;
+  font-size: 18px;
+  margin-left: 2px;
+}
+.dashboard .content .left a:hover, .dashboard .content .left a.active {
+  background-color: rgb(255, 255, 255);
+}
+.dashboard .content .right {
+  margin-left: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .dashboard .content .left {
+    margin-left: 0;
+  }
+  .dashboard .content .right {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

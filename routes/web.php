@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+
 use App\Http\Controllers;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +26,12 @@ Route::get('/detail/{id?}', function() {
 Route::get('/dashboard', function() {
   return view('pages.dashbaord');
 })->name('dashboard');
+
+Route::prefix('dashboard')->group(function() {
+  Route::group([
+    'middleware' => ['auth', 'isAdmin'],
+    'namespace' => 'App\Http\Controllers\Admin'
+  ], function() {
+    Route::resource('/category', CategoryController::class);
+  });
+});
