@@ -1,0 +1,27 @@
+.card-list {
+  background-color: transparent;
+    .card {
+      background-color: transparent;
+        border: none;
+        border-radius: 30px;
+        img {
+            border-radius: 20px 20px 0 0;
+        }
+
+        .date {
+            margin-top: 20px;
+            color: #999999;
+            font-size: 14px;
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+}

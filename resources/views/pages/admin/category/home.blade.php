@@ -28,7 +28,7 @@
                         <th>
                             Slug
                         </th>
-                        <tCreateh>
+                        <th>
                             Images
                         </th>
                         <th>

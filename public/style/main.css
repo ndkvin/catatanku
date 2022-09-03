@@ -99,6 +99,31 @@ footer .right .item {
   font-weight: 400;
 }
 
+.card-list {
+  background-color: transparent;
+}
+.card-list .card {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+}
+.card-list .card img {
+  border-radius: 20px 20px 0 0;
+}
+.card-list .card .date {
+  margin-top: 20px;
+  color: #999999;
+  font-size: 14px;
+}
+.card-list .card .title {
+  font-weight: 600;
+  font-size: 18px;
+}
+.card-list .card a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .auth-page {
   margin-top: 50px;
 }

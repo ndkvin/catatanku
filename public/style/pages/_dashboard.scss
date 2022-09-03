@@ -1,5 +1,5 @@
 .dashboard {
-  background-color: #e9ecef3f;
+    background-color: #e9ecef3f;
     .content {
         .left {
             margin-left: -90px;
@@ -9,28 +9,28 @@
             position: sticky;
             top: 140px;
             &.active {
-              margin-left: 0;
+                margin-left: 0;
             }
 
             a {
-              margin: 10px 0;
-              padding: 10px;
-              border-radius: 10px;
-              i {
-                color: black;
-                font-size: 18px;
-                margin-left: 2px;
-              }  
+                margin: 10px 0;
+                padding: 10px;
+                border-radius: 10px;
+                i {
+                    color: black;
+                    font-size: 18px;
+                    margin-left: 2px;
+                }
 
-              &:hover,
-              &.active {
-                background-color: rgb(255, 255, 255);
-              }
+                &:hover,
+                &.active {
+                    background-color: rgb(255, 255, 255);
+                }
             }
         }
 
         .right {
-          margin-left: 10px;
+            margin-left: 10px;
         }
         @media only screen and (min-width: 768px) {
             .left {

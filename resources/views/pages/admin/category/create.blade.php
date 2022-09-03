@@ -18,7 +18,7 @@
                         <input type="text" class="form-control" id="name" name="name" required />
                     </div>
                 </div>
-                <div class="col-6 col-md-6">
+                <div class="col-12 col-md-6">
                     <p>Image</p>
                     <div class="input-group mb-3">
                         <input type="file" class="form-control" id="inputGroupFile01" name="image" required />

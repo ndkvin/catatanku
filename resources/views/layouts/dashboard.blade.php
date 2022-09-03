@@ -27,7 +27,7 @@
                 <a href="" class="d-block">
                     <i class="fa-solid fa-house-chimney"></i>
                 </a>
-                <a href="" class="d-block">
+                <a href="{{ route('article.index') }}" class="d-block {{ request()->is('admin/article*') ? 'active shadow' : '' }}">
                     <i class="fa-solid fa-newspaper"></i>
                 </a>
                 <a href="{{ route('user.index') }}" class="d-block {{ request()->is('admin/user*') ? 'active shadow' : '' }}">
@@ -84,6 +84,7 @@
             el.classList.toggle("active");
         }
     </script>
+    @stack('script')
 </body>
 
 </html>
