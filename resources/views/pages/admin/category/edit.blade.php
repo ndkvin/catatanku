@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @push('title')
-    Create Category Dashboard
+    Edit Category Dashboard
 @endpush
 
 @section('content')

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
 use App\Http\Controllers;
+use App\Http\Controllers\Admin\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,7 @@ Route::prefix('admin')->group(function() {
     'middleware' => ['auth', 'isAdmin'],
     'namespace' => 'App\Http\Controllers\Admin'
   ], function() {
-    Route::resource('/category', CategoryController::class);
+    Route::resource('category', CategoryController::class);
+    Route::resource('user', UserController::class);
   });
 });

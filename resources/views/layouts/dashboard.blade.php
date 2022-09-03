@@ -30,10 +30,10 @@
                 <a href="" class="d-block">
                     <i class="fa-solid fa-newspaper"></i>
                 </a>
-                <a href="" class="d-block">
+                <a href="{{ route('user.index') }}" class="d-block {{ request()->is('admin/user*') ? 'active shadow' : '' }}">
                     <i class="fa-solid fa-user"></i>
                 </a>
-                <a href="" class="d-block {{ request()->is('admin/category*') ? 'active shadow' : '' }}">
+                <a href="{{ route('category.index') }}" class="d-block {{ request()->is('admin/category*') ? 'active shadow' : '' }}">
                     <i class="fa-solid fa-layer-group"></i>
                 </a>
                 <a href="" class="mt-5 pt-5  d-block border-top">
@@ -50,9 +50,9 @@
                 </form>
                 </p>
             </div>
-            <div class="p-2 right w-100">
+            <div class="p-2 right">
                 @if (session('status'))
-                    <div class="alert alert-success">
+                    <div class="w-50 alert alert-success">
                         <strong>Success!</strong> {{ session('status') }}
                     </div>
                 @endif
