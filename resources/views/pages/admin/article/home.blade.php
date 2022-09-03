@@ -17,7 +17,7 @@
         </div>
 
         <div class="row card-list">
-            @foreach ($articles as $article)
+            @forelse ($articles as $article)
                 <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card bg-light">
                         <img src="{{ Storage::url($article->image_poster) }}" class="card-img-top">
@@ -36,8 +36,12 @@
                             </button>
                         </form>
                     </div>
+                </div>              
+            @empty
+                <div class="col-12 col-md-6">
+                  <h5>Data Empty</h5>
                 </div>
-            @endforeach
+            @endforelse
         </div>
     </div>
 @endsection

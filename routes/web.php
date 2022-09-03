@@ -51,5 +51,7 @@ Route::prefix('dashboard')->group(function() {
     Route::resource('article', ArticleController::class, [
       'as' => 'dashboard'
     ]);
+    Route::get('/', [Controllers\Dashboard\DashboardController::class, 'index'])
+      ->name('dashboard');
   });
 });

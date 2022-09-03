@@ -1,7 +1,7 @@
-@extends('layouts.admin')
+@extends('layouts.dashboard')
 
 @push('title')
-    Home Admin Dashboard
+    Home Dashboard
 @endpush
 
 
@@ -10,7 +10,7 @@
         <div class="row">
             <div class="mt-3 col-12 mb-5">
                 <h2>
-                    Home Admin
+                    Home Dashboard
                 </h2>
             </div>
         </div>
@@ -30,7 +30,7 @@
                 </div>
             @empty
                 <div class="col-12 col-md-6">
-                    <h5>Data Kosong</h5>
+                  <h5>Data Kosong</h5>
                 </div>
             @endforelse
         </div>

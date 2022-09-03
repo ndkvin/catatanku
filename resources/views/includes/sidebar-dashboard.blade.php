@@ -1,9 +1,9 @@
 <div class="p-3 left bg-light rounded-4 shadow" id="left">
-    <a href="{{ route('admin') }}" class="d-block {{ request()->is('admin') ? 'active shadow' : '' }}">
+    <a href="{{ route('dashboard') }}" class="d-block {{ request()->is('dashboard') ? 'active shadow' : '' }}">
         <i class="fa-solid fa-house-chimney"></i>
     </a>
-    <a href="{{ route('admin.article.index') }}"
-        class="d-block {{ request()->is('admin/article*') ? 'active shadow' : '' }}">
+    <a href="{{ route('dashboard.article.index') }}"
+        class="d-block {{ request()->is('dashboard/article*') ? 'active shadow' : '' }}">
         <i class="fa-solid fa-newspaper"></i>
     </a>
     <a href="" class="mt-5 pt-5  d-block border-top">
