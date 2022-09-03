@@ -12,17 +12,6 @@
         <form method="POST" action="{{ route('category.store') }}" enctype="multipart/form-data">
             @csrf
             <div class="row">
-                @if ($errors->any())
-                    <div class="alert alert-anger text-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>
-                                    {{ $error }}
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
                 <div class="col-12 col-md-6">
                     <div class="form-group">
                         <label for="name" class="mb-3">Category Name</label>
@@ -32,7 +21,7 @@
                 <div class="col-6 col-md-6">
                     <p>Image</p>
                     <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="inputGroupFile01" name="image">
+                        <input type="file" class="form-control" id="inputGroupFile01" name="image" required />
                     </div>
                 </div>
                 <div class="col-12 col-md-6">

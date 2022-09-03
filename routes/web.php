@@ -27,7 +27,7 @@ Route::get('/dashboard', function() {
   return view('pages.dashbaord');
 })->name('dashboard');
 
-Route::prefix('dashboard')->group(function() {
+Route::prefix('admin')->group(function() {
   Route::group([
     'middleware' => ['auth', 'isAdmin'],
     'namespace' => 'App\Http\Controllers\Admin'

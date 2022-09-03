@@ -219,7 +219,7 @@ footer .right .item {
   height: 70vh;
   position: -webkit-sticky;
   position: sticky;
-  top: 80px;
+  top: 140px;
 }
 .dashboard .content .left.active {
   margin-left: 0;

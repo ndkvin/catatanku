@@ -19,7 +19,7 @@
     @include('includes.navbar-dashboard')
 
     <!-- Content -->
-    <div class="container-fluid dashboard py-5">
+    <div class="container-fluid dashboard py-5 mt-5">
         <button class="btn btn-outline-dark d-md-none my-3" onclick=clicking()><i
                 class="fa-solid fa-chevron-right"></i></button>
         <div class="d-flex flex-row mb-3 content">
@@ -33,7 +33,7 @@
                 <a href="" class="d-block">
                     <i class="fa-solid fa-user"></i>
                 </a>
-                <a href="" class="d-block {{ request()->is('dashboard/category*') ? 'active shadow' : '' }}">
+                <a href="" class="d-block {{ request()->is('admin/category*') ? 'active shadow' : '' }}">
                     <i class="fa-solid fa-layer-group"></i>
                 </a>
                 <a href="" class="mt-5 pt-5  d-block border-top">
@@ -51,6 +51,22 @@
                 </p>
             </div>
             <div class="p-2 right w-100">
+                @if (session('status'))
+                    <div class="alert alert-success">
+                        <strong>Success!</strong> {{ session('status') }}
+                    </div>
+                @endif
+                @if ($errors->any())
+                    <div class="alert alert-anger text-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>
+                                    {{ $error }}
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                 @yield('content')
             </div>
         </div>
