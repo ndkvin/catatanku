@@ -42,3 +42,14 @@ Route::prefix('admin')->group(function() {
       ->name('admin');
   });
 });
+
+Route::prefix('dashboard')->group(function() {
+  Route::group([
+    'middleware' => ['auth', 'isWriter'],
+    'namespace' => 'App\Http\Controllers\Dashboard'
+  ], function() {
+    Route::resource('article', ArticleController::class, [
+      'as' => 'dashboard'
+    ]);
+  });
+});
