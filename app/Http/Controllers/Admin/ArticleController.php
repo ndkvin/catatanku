@@ -22,7 +22,7 @@ class ArticleController extends Controller
   public function index()
   {
 
-    $articles = Article::all();
+    $articles = Article::with(['category'])->get();
 
     return view('pages.admin.article.home', [
       'articles' => $articles,

@@ -9,7 +9,7 @@ use App\Models\Article;
 class DashboardController extends Controller
 {
     public function index() {
-      $articles = Article::all();
+      $articles = Article::with(['category'])->get();
 
       return view('pages.admin.home', [
         'articles' => $articles
