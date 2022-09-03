@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @push('title')
-    Category Home Dashboard
+    Category Home Admin Dashboard
 @endpush
 
 

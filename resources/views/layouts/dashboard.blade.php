@@ -24,7 +24,7 @@
                 class="fa-solid fa-chevron-right"></i></button>
         <div class="d-flex flex-row mb-3 content">
             <div class="p-3 left bg-light rounded-4 shadow" id="left">
-                <a href="" class="d-block">
+                <a href="{{ route('admin') }}" class="d-block {{ request()->is('admin*') ? 'active shadow' : '' }}">
                     <i class="fa-solid fa-house-chimney"></i>
                 </a>
                 <a href="{{ route('article.index') }}" class="d-block {{ request()->is('admin/article*') ? 'active shadow' : '' }}">

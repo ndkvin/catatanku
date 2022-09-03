@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @push('title')
-    Create Article Dashboard
+    Create Article Admin Dashboard
 @endpush
 
 @section('content')

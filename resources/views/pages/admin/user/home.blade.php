@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @push('title')
-    User Home Dashboard
+    User Home Admin Dashboard
 @endpush
 
 
@@ -10,7 +10,7 @@
         <div class="row">
             <div class="mt-3 col-12">
                 <h2>
-                    User Dashboard
+                    User Admin Dashboard
                 </h2>
             </div>
         </div>

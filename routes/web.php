@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
 use App\Http\Controllers;
-use App\Http\Controllers\Admin\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,5 +35,7 @@ Route::prefix('admin')->group(function() {
     Route::resource('category', CategoryController::class);
     Route::resource('user', UserController::class);
     Route::resource('article', ArticleController::class);
+    Route::get('/', [Controllers\Admin\DashboardController::class, 'index'])
+      ->name('admin');
   });
 });

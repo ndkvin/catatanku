@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @push('title')
-    Article Home Admin Dashboard
+    Article Home Dashboard
 @endpush
 
 
@@ -11,7 +11,7 @@
         <div class="row">
             <div class="mt-3 col-12">
                 <h2>
-                    Article Dashboard
+                    Home Admin
                 </h2>
             </div>
         </div>
@@ -26,15 +26,6 @@
                             {{ $article->title }}
                         </h5>
                         <a href="#" class="d-block">Read Article</a>
-                        <a href="{{ route('article.edit', $article->id) }}" class="btn btn-dark"><i
-                                class="fa-solid fa-pen me-2 mt-2"></i>Edit</a>
-
-                        <form class="mt-2" action="{{ route('article.destroy', $article->id) }}" method="POST">
-                            {{ method_field('delete') }} {{ csrf_field() }}
-                            <button type="submit" class="w-100 btn btn-danger">
-                                <i class="fa-solid fa-trash"></i> Delete
-                            </button>
-                        </form>
                     </div>
                 </div>
             @endforeach

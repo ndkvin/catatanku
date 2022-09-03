@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @push('title')
-    Edit Category Dashboard
+    Edit Category Admin Dashboard
 @endpush
 
 @section('content')
