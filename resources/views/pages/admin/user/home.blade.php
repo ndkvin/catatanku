@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+@extends('layouts.admin')
 
 @push('title')
     User Home Admin Dashboard
@@ -48,10 +48,10 @@
                                 {{ $user->role }}
                             </td>
                             <td>
-                                <a href="{{ route('user.edit', $user->id) }}" class="btn btn-dark"><i
+                                <a href="{{ route('admin.user.edit', $user->id) }}" class="btn btn-dark"><i
                                         class="fa-solid fa-pen me-2"></i>Edit</a>
 
-                                <form class="mt-2" action="{{ route('user.destroy', $user->id) }}" method="POST">
+                                <form class="mt-2" action="{{ route('admin.user.destroy', $user->id) }}" method="POST">
                                     {{ method_field('delete') }} {{ csrf_field() }}
                                     <button type="submit" class="btn btn-danger">
                                         <i class="fa-solid fa-trash"></i> Delete

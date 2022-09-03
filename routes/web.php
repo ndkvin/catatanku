@@ -23,18 +23,21 @@ Route::get('/', [Controllers\HomeController::class, 'index'])
 Route::get('/detail/{id?}', function() {
   return view('pages.detail');
 })->name('detail');
-Route::get('/dashboard', function() {
-  return view('pages.dashbaord');
-})->name('dashboard');
 
 Route::prefix('admin')->group(function() {
   Route::group([
     'middleware' => ['auth', 'isAdmin'],
     'namespace' => 'App\Http\Controllers\Admin'
   ], function() {
-    Route::resource('category', CategoryController::class);
-    Route::resource('user', UserController::class);
-    Route::resource('article', ArticleController::class);
+    Route::resource('category', CategoryController::class, [
+      'as' => 'admin'
+    ]);
+    Route::resource('user', UserController::class, [
+      'as' => 'admin'
+    ]);
+    Route::resource('article', ArticleController::class, [
+      'as' => 'admin'
+    ]);
     Route::get('/', [Controllers\Admin\DashboardController::class, 'index'])
       ->name('admin');
   });

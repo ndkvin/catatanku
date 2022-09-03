@@ -84,11 +84,11 @@ class UserController extends Controller
 
       $user->update($data);
 
-      return redirect()->route('user.index')
+      return redirect()->route('admin.user.index')
         ->with('status', 'User updated successfully');
     }
 
-    return redirect()->route('user.index')
+    return redirect()->route('admin.user.index')
       ->withErrors([
         'error' => 'You don\'t have permission to access this content'
       ]);
@@ -107,11 +107,11 @@ class UserController extends Controller
 
       $user->delete();
 
-      return redirect()->route('user.index')
+      return redirect()->route('admin.user.index')
         ->with('status', 'User deleted successfully');
     }
 
-    return redirect()->route('user.index')
+    return redirect()->route('admin.user.index')
       ->withErrors([
         'error' => 'You don\'t have permission to access this content'
       ]);

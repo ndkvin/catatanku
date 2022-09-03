@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+@extends('layouts.admin')
 
 @push('title')
     Create Category Admin Dashboard
@@ -9,7 +9,7 @@
         <h3>
             Create Category
         </h3>
-        <form method="POST" action="{{ route('category.store') }}" enctype="multipart/form-data">
+        <form method="POST" action="{{ route('admin.category.store') }}" enctype="multipart/form-data">
             @csrf
             <div class="row">
                 <div class="col-12 col-md-6">

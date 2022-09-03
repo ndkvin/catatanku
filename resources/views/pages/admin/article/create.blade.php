@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+@extends('layouts.admin')
 
 @push('title')
     Create Article Admin Dashboard
@@ -9,7 +9,7 @@
         <h3>
             Create Article
         </h3>
-        <form method="POST" action="{{ route('article.store') }}" enctype="multipart/form-data">
+        <form method="POST" action="{{ route('admin.article.store') }}" enctype="multipart/form-data">
             @csrf
             <div class="row">
                 <div class="col-12 col-md-6">

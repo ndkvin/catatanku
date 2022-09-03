@@ -52,11 +52,11 @@ class CategoryController extends Controller
       Category::create($data);
 
       return redirect()
-        ->route('category.index')
+        ->route('admin.category.index')
         ->with('status', 'Category created successfully');
     }
 
-    return redirect()->route('category.index')
+    return redirect()->route('admin.category.index')
       ->withErrors([
         'error' => 'you don\'t have permission to access this content'
       ]);
@@ -106,11 +106,11 @@ class CategoryController extends Controller
 
       $category = Category::findOrFail($id);
       $category->update($data);
-      return redirect()->route('category.index')
+      return redirect()->route('admin.category.index')
         ->with('status', 'Category updated successfully');
     }
 
-    return redirect()->route('category.index')
+    return redirect()->route('admin.category.index')
       ->withErrors([
         'error' => 'you don\'t have permission to access this content'
       ]);
@@ -129,11 +129,11 @@ class CategoryController extends Controller
 
       $category->delete();
 
-      return redirect()->route('category.index')
+      return redirect()->route('admin.category.index')
         ->with('status', 'Category Removed');
     }
 
-    return redirect()->route('category.index')
+    return redirect()->route('admin.category.index')
       ->withErrors([
         'error' => 'you don\'t have permission to access this content'
       ]);

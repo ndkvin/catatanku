@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+@extends('layouts.admin')
 
 @push('title')
     Edit User Admin Dashboard
@@ -9,7 +9,7 @@
         <h3>
             Edit User
         </h3>
-        <form method="POST" action="{{ route('user.update', $user->id) }}" enctype="multipart/form-data">
+        <form method="POST" action="{{ route('admin.user.update', $user->id) }}" enctype="multipart/form-data">
           @method('PUT')  
           @csrf
             <div class="row">

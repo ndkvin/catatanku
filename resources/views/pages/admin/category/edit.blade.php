@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+@extends('layouts.admin')
 
 @push('title')
     Edit Category Admin Dashboard
@@ -9,7 +9,7 @@
         <h3>
             Edit Category
         </h3>
-        <form method="POST" action="{{ route('category.update', $category->id) }}" enctype="multipart/form-data">
+        <form method="POST" action="{{ route('admin.category.update', $category->id) }}" enctype="multipart/form-data">
           @method('PUT')  
           @csrf
             <div class="row">
@@ -36,7 +36,7 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <img src="{{ Storage::url($category->image) }}" alt="">
+                    <img class="w-100" src="{{ Storage::url($category->image) }}" alt="">
                 </div>
             </div>
             <div class="row">

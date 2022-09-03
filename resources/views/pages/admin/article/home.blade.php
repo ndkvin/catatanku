@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+@extends('layouts.admin')
 
 @push('title')
     Article Home Admin Dashboard
@@ -7,7 +7,7 @@
 
 @section('content')
     <div class="container dashboard-home">
-        <a href="{{ route('article.create') }}" class="btn btn-dark"><i class="fa-solid fa-plus me-2"></i>Add Article</a>
+        <a href="{{ route('admin.article.create') }}" class="btn btn-dark"><i class="fa-solid fa-plus me-2"></i>Add Article</a>
         <div class="row">
             <div class="mt-3 col-12">
                 <h2>
@@ -26,10 +26,10 @@
                             {{ $article->title }}
                         </h5>
                         <a href="#" class="d-block">Read Article</a>
-                        <a href="{{ route('article.edit', $article->id) }}" class="btn btn-dark"><i
+                        <a href="{{ route('admin.article.edit', $article->id) }}" class="btn btn-dark"><i
                                 class="fa-solid fa-pen me-2 mt-2"></i>Edit</a>
 
-                        <form class="mt-2" action="{{ route('article.destroy', $article->id) }}" method="POST">
+                        <form class="mt-2" action="{{ route('admin.article.destroy', $article->id) }}" method="POST">
                             {{ method_field('delete') }} {{ csrf_field() }}
                             <button type="submit" class="w-100 btn btn-danger">
                                 <i class="fa-solid fa-trash"></i> Delete

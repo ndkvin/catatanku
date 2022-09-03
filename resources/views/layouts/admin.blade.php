@@ -23,33 +23,7 @@
         <button class="btn btn-outline-dark d-md-none my-3" onclick=clicking()><i
                 class="fa-solid fa-chevron-right"></i></button>
         <div class="d-flex flex-row mb-3 content">
-            <div class="p-3 left bg-light rounded-4 shadow" id="left">
-                <a href="{{ route('admin') }}" class="d-block {{ request()->is('admin') ? 'active shadow' : '' }}">
-                    <i class="fa-solid fa-house-chimney"></i>
-                </a>
-                <a href="{{ route('article.index') }}" class="d-block {{ request()->is('admin/article*') ? 'active shadow' : '' }}">
-                    <i class="fa-solid fa-newspaper"></i>
-                </a>
-                <a href="{{ route('user.index') }}" class="d-block {{ request()->is('admin/user*') ? 'active shadow' : '' }}">
-                    <i class="fa-solid fa-user"></i>
-                </a>
-                <a href="{{ route('category.index') }}" class="d-block {{ request()->is('admin/category*') ? 'active shadow' : '' }}">
-                    <i class="fa-solid fa-layer-group"></i>
-                </a>
-                <a href="" class="mt-5 pt-5  d-block border-top">
-                    <i class="fa-solid fa-file-circle-question"></i>
-                </a>
-                <p class="d-block mt-2">
-                    <a href="{{ route('logout') }}"
-                        onclick="event.preventDefault();
-                                   document.getElementById('logout-form').submit();">
-                        <i class="fa-solid fa-right-from-bracket"></i>
-                    </a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                    @csrf
-                </form>
-                </p>
-            </div>
+            @include('includes.sidebar-admin')
             <div class="p-2 right">
                 @if (session('status'))
                     <div class="w-50 alert alert-success">

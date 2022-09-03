@@ -58,11 +58,11 @@ class ArticleController extends Controller
       $data['user_id'] = Auth::user()->id;
       Article::create($data);
 
-      return redirect()->route('article.index')
+      return redirect()->route('admin.article.index')
         ->with('status', 'Article created successfully');
     }
 
-    return redirect()->route('article.inde')
+    return redirect()->route('admin.article.inde')
       ->withErrors([
         'error' => 'You don\'t have permission to access this content',
       ]);
@@ -113,11 +113,11 @@ class ArticleController extends Controller
       }
 
       $article->update($data);
-      return redirect()->route('article.index')
+      return redirect()->route('admin.article.index')
         ->with('status', 'Article updated successfully');
     }
 
-    return redirect()->route('article.inde')
+    return redirect()->route('admin.article.inde')
       ->withErrors([
         'error' => 'You don\'t have permission to access this content',
       ]);
@@ -135,11 +135,11 @@ class ArticleController extends Controller
       $article = Article::findOrFail($id);
 
       $article->delete();
-      return redirect()->route('article.index')
+      return redirect()->route('admin.article.index')
         ->with('status', 'Article deleted successfully');
     }
 
-    return redirect()->route('article.index')
+    return redirect()->route('admin.article.index')
       ->withErrors([
         'error' => 'You don\'t have permission to access this resource',
       ]);

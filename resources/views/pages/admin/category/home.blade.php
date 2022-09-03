@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+@extends('layouts.admin')
 
 @push('title')
     Category Home Admin Dashboard
@@ -7,7 +7,7 @@
 
 @section('content')
     <div class="container">
-        <a href="{{ route('category.create') }}" class="btn btn-dark"><i class="fa-solid fa-plus me-2"></i>Add Category</a>
+        <a href="{{ route('admin.category.create') }}" class="btn btn-dark"><i class="fa-solid fa-plus me-2"></i>Add Category</a>
         <div class="row">
             <div class="mt-3 col-12">
                 <h2>
@@ -55,10 +55,10 @@
                                 <img class="w-100" src="{{ Storage::url($category->image) }}" alt="">
                             </td>
                             <td>
-                                <a href="{{ route('category.edit', $category->id) }}" class="btn btn-dark"><i
+                                <a href="{{ route('admin.category.edit', $category->id) }}" class="btn btn-dark"><i
                                         class="fa-solid fa-pen me-2"></i>Edit</a>
 
-                                <form class="mt-2" action="{{ route('category.destroy', $category->id) }}" method="POST">
+                                <form class="mt-2" action="{{ route('admin.category.destroy', $category->id) }}" method="POST">
                                     {{ method_field('delete') }} {{ csrf_field() }}
                                     <button type="submit" class="btn btn-danger">
                                         <i class="fa-solid fa-trash"></i> Delete
