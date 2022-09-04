@@ -20,8 +20,10 @@ Auth::routes();
 
 Route::get('/', [Controllers\HomeController::class, 'index'])
   ->name('home');
-Route::get('/detail/{slug?}', [Controllers\DetailController::class, 'index'])
+Route::get('/detail/{slug}', [Controllers\DetailController::class, 'index'])
   ->name('detail');
+Route::get('/category/{slug}', [Controllers\CategoryController::class, 'index'])
+  ->name('category');
 
 Route::prefix('admin')->group(function() {
   Route::group([

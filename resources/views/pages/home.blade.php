@@ -34,13 +34,13 @@
                     Trending
                 </h2>
                 <div class="row">
-                    @forelse ($trendins as $trending)
+                    @forelse ($trendings as $trending)
                         <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                             <div class="card">
                                 <img src="{{ Storage::url($trending->image_poster) }}" class="card-img-top" alt="...">
                                 <div class="date">{{ $trending->category->name }} - {{ date('M, d Y', strtotime($trending->created_at)) }}</div>
                                 <h5 class="title card-title mt-1 mb-3 w-75">{{ $trending->title }}</h5>
-                                <a href="#" class="">Read Article</a>
+                                <a href="{{ route('detail', $trending->slug) }}" class="">Read Article</a>
                             </div>
                         </div>
                     @empty
@@ -63,7 +63,7 @@
                           <img src="{{ Storage::url($technology->image_poster) }}" class="card-img-top" alt="...">
                           <div class="date">{{ $technology->category->name }} - {{ date('M, d Y', strtotime($technology->created_at)) }}</div>
                           <h5 class="title card-title mt-1 mb-3 w-75">{{ $technology->title }}</h5>
-                          <a href="#" class="">Read Article</a>
+                          <a href="{{ route('detail', $technology->slug) }}" class="">Read Article</a>
                       </div>
                   </div>
               @empty

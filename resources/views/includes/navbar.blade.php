@@ -25,9 +25,9 @@
                         Category
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Coding</a></li>
-                        <li><a class="dropdown-item" href="#">Technology</a></li>
-                        <li><a class="dropdown-item" href="#">Sport</a></li>
+                        @foreach ($categories as $category)
+                            <li><a class="dropdown-item" href="{{ route('category', $category->slug) }}">{{ $category->name }}</a></li>
+                        @endforeach
                     </ul>
                 </li>
                 <li class="nav-item">

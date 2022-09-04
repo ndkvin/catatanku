@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Builder;
 
 class HomeController extends Controller
@@ -31,10 +32,13 @@ class HomeController extends Controller
                   })
                   ->take(3)
                   ->get();
+    $categories = Category::all();
+
     return view('pages.home', [
       'headline' => $headline,
-      'trendins' => $trendings,
-      'technologys' => $technologys
+      'trendings' => $trendings,
+      'technologys' => $technologys,
+      'categories' => $categories,
     ]);
   }
 }
