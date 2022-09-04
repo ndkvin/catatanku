@@ -19,7 +19,7 @@ class CategoryController extends Controller
     $name = Category::where('slug', $slug)
       ->first();
 
-    return view('pages.category', [
+    return view('pages.home.category', [
       'categories' => $categories,
       'articles' => $articles,
       'name' => $name,

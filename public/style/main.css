@@ -61,6 +61,10 @@ body {
   margin-top: 8px;
   text-align: center;
 }
+.subnavbar .category-list .category a {
+  color: white;
+  text-decoration: none;
+}
 .subnavbar form span {
   border: none;
 }
