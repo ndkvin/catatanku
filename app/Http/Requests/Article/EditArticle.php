@@ -24,7 +24,7 @@ class EditArticle extends FormRequest
   public function rules()
   {
     return [
-      'title' => 'string|required|unique:articles',
+      'title' => 'string|required',
       'image_poster' => 'image',
       'category_id' => 'required|exists:categories,id',
       'content' => 'string|required',

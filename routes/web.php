@@ -20,9 +20,8 @@ Auth::routes();
 
 Route::get('/', [Controllers\HomeController::class, 'index'])
   ->name('home');
-Route::get('/detail/{id?}', function() {
-  return view('pages.detail');
-})->name('detail');
+Route::get('/detail/{slug?}', [Controllers\DetailController::class, 'index'])
+  ->name('detail');
 
 Route::prefix('admin')->group(function() {
   Route::group([
