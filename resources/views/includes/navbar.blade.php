@@ -25,9 +25,12 @@
                         Category
                     </a>
                     <ul class="dropdown-menu">
-                        @foreach ($categories as $category)
-                            <li><a class="dropdown-item" href="{{ route('category', $category->slug) }}">{{ $category->name }}</a></li>
-                        @endforeach
+                        @forelse ($categories as $category)
+                            <li><a class="dropdown-item"
+                                    href="{{ route('category', $category->slug) }}">{{ $category->name }}</a></li>
+                        @empty
+                        <li>Data Empty</li>
+                        @endforelse
                     </ul>
                 </li>
                 <li class="nav-item">
